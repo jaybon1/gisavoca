@@ -1,3 +1,3 @@
-﻿raw="Jspstudy주인은?^^^정동진선생님&&&" +
-"내옆자리는^^^병근이&&&" +
-"fileend";
+﻿raw="Jspstudy주인은?^^^정동진선생님<br>aasdf<br>asdf&&&"+
+"내옆자리는^^^병근이&&&"+
+"네이버로고^^^https://i.imgur.com/wbkJgmd.gif";
