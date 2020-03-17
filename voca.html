@@ -99,9 +99,7 @@
                     }
                 } else {
                     if(page < result.length){
-                        if(result[page][part].indexOf('https://i.imgur.com') == -1){
-                            document.getElementById("card").innerHTML = (page+1) + "/" + (result.length-leng) + ".  Answer" + "<br><hr>" + result[page][0] + "<br><hr>" + result[page][part];
-                        } else if(result[page][part].indexOf('http://59') == -1){
+                        if(result[page][part].indexOf('https://') == -1 && result[page][part].indexOf('http://') == -1){
                             document.getElementById("card").innerHTML = (page+1) + "/" + (result.length-leng) + ".  Answer" + "<br><hr>" + result[page][0] + "<br><hr>" + result[page][part];
                         } else {
                             document.getElementById("card").innerHTML =  (page+1) + "/" + (result.length-leng) +".  Answer" + "<br><hr>" + result[page][0] + "<br><hr>" + "<img src='" + result[page][part] + "' width='100%'>";
@@ -123,9 +121,7 @@
                     document.getElementById("card").innerHTML = (page+1) + "/" + (result.length-leng) + ".  Question" + "<br><hr>" + result1;
                     part++;
                 } else{
-                    if(result[page][part].indexOf('https://i.imgur.com') == -1){
-                        document.getElementById("card").innerHTML = (page+1) + "/" + (result.length-leng) + ".  Answer" + "<br><hr>" + result[page][0] + "<br><hr>" + result[page][part];
-                    } else if(result[page][part].indexOf('http://59') == -1){
+                    if(result[page][part].indexOf('https://') == -1 && result[page][part].indexOf('http://') == -1){
                         document.getElementById("card").innerHTML = (page+1) + "/" + (result.length-leng) + ".  Answer" + "<br><hr>" + result[page][0] + "<br><hr>" + result[page][part];
                     } else {
                         document.getElementById("card").innerHTML = (page+1) + "/" + (result.length-leng) + ".  Answer" + "<br><hr>" + result[page][0] + "<br><hr>" + "<img src='" + result[page][part] + "' width='100%'>";
